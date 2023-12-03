@@ -15,7 +15,7 @@
   <title>Admin</title>
   <style>
 
-</style>
+  </style>
 
 
 
@@ -31,11 +31,11 @@
       echo "<div class=\"titulo\"><h1 id=\"titulo-Admin\">Bienvenido  $adminCodificado</h1></div>"
       ?>
       <div id="salir">
-      <a href="index.php"><span class="material-symbols-outlined">
-logout
-</span> </a> 
+        <a href="index.php"><span class="material-symbols-outlined">
+            logout
+          </span> </a>
       </div>
- 
+
     </div>
     <div class="bodyAdmin">
 
@@ -92,17 +92,17 @@ logout
         <button type="reset" class="reset">Borrar</button>
       </form>
       <div class="botones">
-        <a href="#" onclick="mostrar()" class="mostrar btn">Mostrar</a>
-
+        <a href="#" onclick="mostrar()" class="mostrar btn">Mostrar articulos</a>
+        <a href="#" onclick="consultName()" class="mostrar btn">consultar por nombre</a>
 
         <?php include("formInsertar.php") ?>
         <?php include("formBorrar.php") ?>
-        <?php include("formModificar.php") ?>
+        <?php include("formConsulta.php") ?>
         <?php include("formHiddenMostrar.php") ?>
 
 
-      </div>
 
+      </div>
 
 
     </div>

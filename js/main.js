@@ -161,6 +161,9 @@ function modificar(tmpId, tmpNombreDVD, artistaDVD, tmpEstiloMusicalDVD, tmpAño
     }
   }
 }
+
+
+
 //alerta esta oculta
 window.addEventListener("load", function () {
   const alertaMas8 = document.getElementById("alertaMa8");
@@ -206,7 +209,24 @@ function reogerLogin() {
     }, 10000);
   }
 }
- 
+
+function consultName() {
+  const name = prompt("Introduzca el nombre del artículo a consultar:");
+
+  // Verificar si el usuario hizo clic en "Cancelar"
+  if (name === null) {
+      console.log("Operación cancelada por el usuario.");
+      return;
+  }
+
+  const decision = confirm(`¿Está seguro de que desea modificar ${name}?`);
+  
+  if (decision) {
+      document.formConsulta.nameConsulta.value = name;
+      document.formConsulta.submit();
+  }
+}
+
 
 
 
