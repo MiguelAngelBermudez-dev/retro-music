@@ -94,16 +94,28 @@
       <div class="botones">
         <a href="#" onclick="mostrar()" class="mostrar btn">Mostrar articulos</a>
         <a href="#" onclick="consultName()" class="mostrar btn">consultar por nombre</a>
-
-        <?php include("formInsertar.php") ?>
+        <a href="#" onclick=" Ordenado()" class="mostrar btn">Mostrar por orden de insersion</a>
+        <a href="#" onclick=" orderConsult()" class="mostrar btn">Elegir orden</a>
+        <a href="#" onclick="ordenLimit()" class="mostrar btn">Articulos valor superior a 25€</a>
+<br/>
+<a href="#" onclick="masVendidos()" class="mostrar btn">Mostrar ventas</a>
+<a href="#" onclick="datosCliente()" class="mostrar btn">Mostrar cliente</a>
+<a href="#" onclick="precioTotalVentas()" class="mostrar btn">Mostrar precio total de articulos vendidos</a>
+<a href="#" onclick="productoxCliente()" class="mostrar btn">Mostrar producto del cliente a elegir</a>
+<a href="#" onclick=" mayorVenta()" class="mostrar btn">Mostrar producto mas vendido</a>
+      </div>
+      <?php include("formInsertar.php") ?>
         <?php include("formBorrar.php") ?>
         <?php include("formConsulta.php") ?>
+        <?php include("formOrder.php")?>
+        <?php include("formOrdeConsult.php")?>
+        <?php include("formOrdeLimit.php")?>
+        <?php include("formMas.php")?>
+        <?php include("formCliente.php")?>
+        <?php include("formTotal.php")?>
+        <?php include("formProductoCliente.php")?>
+        <?php include("formMayorVnedido.php")?>
         <?php include("formHiddenMostrar.php") ?>
-
-
-
-      </div>
-
 
     </div>
 

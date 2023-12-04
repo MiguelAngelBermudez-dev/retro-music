@@ -66,9 +66,15 @@ function mostrar() {
   }
 }
 function borrar(tmpId) {
-  alert("Eliminando: " + tmpId);
-  document.recogeId.idBorrar.value = tmpId;
-  document.recogeId.submit();
+  alert("Eliminar: " + tmpId);
+  let confirmar = confirm(`esta seguro que desea borrar ${tmpId}`);
+  if(confirmar){
+    document.recogeId.idBorrar.value = tmpId;
+    document.recogeId.submit();
+  }else{
+    alert("Eliminado correctamente");
+  }
+ 
 }
 
 
@@ -161,7 +167,15 @@ function modificar(tmpId, tmpNombreDVD, artistaDVD, tmpEstiloMusicalDVD, tmpAño
     }
   }
 }
+function orderConsult(){
+  let orden = prompt("como desea ordenar la tabla:");
+  let confirmarcion = confirm(`Esta seguro que desea hacer la consulta en orden de ${orden}`);
+  if(confirmarcion){
 
+  document.formConsultaOrden.ConsultaOrden.value = orden;
+  document.formConsultaOrden.submit();
+  }
+}
 
 
 //alerta esta oculta
@@ -219,20 +233,111 @@ function consultName() {
       return;
   }
 
-  const decision = confirm(`¿Está seguro de que desea modificar ${name}?`);
+  const preguntar = confirm(`¿Está seguro de que desea consultar ${name}?`);
   
-  if (decision) {
+  if (preguntar) {
       document.formConsulta.nameConsulta.value = name;
       document.formConsulta.submit();
   }
 }
+function Ordenado(){
+  let bool;
+  document.forOrdenado.ordenarId.value = bool;
+  document.forOrdenado.submit();
+}
+function carrito(){
+  alert("Se ha añadido al carrito correctamente");
+}
+function ordenLimit(){
+ let orden;
+    document.formLimit.ConsultaLimit.value = orden;
+    document.formLimit.submit();
+}
+function masVendidos(){
+  alert("funciona");
+  let masvendido;
+  document.formMasVendido.masvendido.value = masvendido;
+  document.formMasVendido.submit();
+}
+function datosCliente(){
+  let articulo = prompt("Introduzca el nombre del producto:");
+  document.formCliente.consultaCliente.value = articulo;
+  document.formCliente.submit();
+}
+function precioTotalVentas(){
+  let ventas;
+  document.formPrecioTotal.PrecioTotal.value = ventas;
+  document.formPrecioTotal.submit();
+}
+function productoxCliente(){
+  let cliente = prompt("Ingrese el nombre del cliente:");
+  document.formProductosxClien.clientes.value = cliente;
+  document.formProductosxClien.submit();
+} 
+function mayorVenta(){
+  let venta;
+  document.formMayorventa.mayorventa.value = venta;
+  document.formMayorventa.submit();
+}
+document.addEventListener("DOMContentLoaded", () => {
+  const boton1 = document.querySelector("#boton1");
+  const boton2 = document.querySelector("#boton2");
+  const boton3 = document.querySelector("#boton3");
+  const boton4 = document.querySelector("#boton4");
+  const boton5 = document.querySelector("#boton5");
+  const boton6 = document.querySelector("#boton6");
 
-
-
-
-
-
-
+  boton1.addEventListener("click", (event) => {
+    event.preventDefault();
+    alert("se ha realizado la compra correctamente");
+    let valorDcompra = "michael";
+   document.formcompra.compra.value = valorDcompra;
+   document.formcompra.submit();
+  });
+  boton2.addEventListener("click", (event) => {
+    event.preventDefault();
+    alert("se ha realizado la compra correctamente");
+    let valorDcompra = "queen";
+    document.formcompra.compra.value = valorDcompra;
+    document.formcompra.submit();
+  });
+  boton3.addEventListener("click", (event) => {
+    event.preventDefault();
+    alert("se ha realizado la compra correctamente");
+    let valorDcompra = "fortunate";
+    document.formcompra.compra.value = valorDcompra;
+    document.formcompra.submit();
+  });
+  boton4.addEventListener("click", (event) => {
+    
+    alert("se ha realizado la compra correctamente");
+    let valorDcompra = "dire";
+    document.formcompra.compra.value = valorDcompra;
+    document.formcompra.submit();
+  });
+  boton5.addEventListener("click", (event) => {
+    event.preventDefault();
+    let valorDcompra = "beatles";
+    let nombreComprador = prompt("ingrese su nombre completo");
+    let datosComprador = prompt("ingrese su correo electronido y numero de telefono para realizar la transaccion");
+    document.formcompra.nombrecomprador.value = nombreComprador;
+    document.formcompra.datoscomprador.value = datosComprador;
+    document.formcompra.compra.value = valorDcompra;
+    document.formcompra.submit();
+    alert("se ha realizado la compra correctamente");
+  });
+  boton6.addEventListener("click", (event) => {
+    event.preventDefault();
+    let valorDcompra = "free";
+    let nombreComprador = prompt("ingrese su nombre completo");
+    let datosComprador = prompt("ingrese su correo electronido y numero de telefono para realizar la transaccion");
+    document.formcompra.nombrecomprador.value = nombreComprador;
+    document.formcompra.datoscomprador.value = datosComprador;
+    document.formcompra.compra.value = valorDcompra;
+    document.formcompra.submit();
+    alert("se ha realizado la compra correctamente");
+    });
+});
 
 
 

@@ -6,7 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    
 <form action="" method="POST" name="insertarDatos">
     <input type="hidden" name="nombreDvd">
     <input type="hidden" name="artistaNombre">
@@ -31,7 +30,6 @@ if(isset($_POST['nombreDvd']) || isset($_POST['artistaNombre']) || isset($_POST[
  $insertPrecioCanciones = $_POST['precioCanciones'];
  $insertDescuentoPrecio = $_POST['descuentoPrecio'];
  $insertIvaPrecio = $_POST['ivaPrecio'];
-
     //habri conexion a base de datos 
     $host = "localhost";
     $user = 'root';
@@ -39,6 +37,17 @@ if(isset($_POST['nombreDvd']) || isset($_POST['artistaNombre']) || isset($_POST[
     $db   = 'bbdd_mabc_music';
     $tabla = 'tb_mabc_dvds';
     $conn = new mysqli($host, $user, $pass, $db);
+//se realiza para que no afecte el texto a la base de datos
+    $insertNombreDvd = mysqli_real_escape_string($conn, $insertNombreDvd);
+    $insertArtistaNombre = mysqli_real_escape_string($conn, $insertArtistaNombre);
+    $insertEstiloMusica = mysqli_real_escape_string($conn, $insertEstiloMusica);
+    $insertAnioCreacion = mysqli_real_escape_string($conn, $insertAnioCreacion);
+    $insertNumeroCanciones = mysqli_real_escape_string($conn, $insertNumeroCanciones);
+    $insertTitulosCanciones = mysqli_real_escape_string($conn, $insertTitulosCanciones);
+    $insertCantidadCanciones = mysqli_real_escape_string($conn, $insertCantidadCanciones);
+    $insertPrecioCanciones = mysqli_real_escape_string($conn, $insertPrecioCanciones);
+    $insertDescuentoPrecio = mysqli_real_escape_string($conn, $insertDescuentoPrecio);
+    $insertIvaPrecio = mysqli_real_escape_string($conn, $insertIvaPrecio);
     //insertar datos en base de datos 
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
@@ -59,10 +68,7 @@ if(isset($_POST['nombreDvd']) || isset($_POST['artistaNombre']) || isset($_POST[
                 }else{
                     echo "Error: " . $sql . "<br>" . $conn->error;
                     }
-
-
 }
 ?>
-
 </body>
 </html>

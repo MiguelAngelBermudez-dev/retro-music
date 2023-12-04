@@ -11,8 +11,8 @@
       <a class=" text-sm text-gray-600 text-white" href="#"><i class="fa-solid fa-eye fa-2xl" style="color: #ffffff;"></i></a>
 
       <div class=" botones mt-4 flex justify-between">
-        <button class="b2 px-4 py-2 text-sm font-medium text-white bg-primary rounded-3 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300">Buy</button>
-        <button class="b2 px-4 py-2 text-sm font-medium text-gray-800 bg-gray-200 rounded-3 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-300">
+        <button onclick="ventaArticulo()" id="boton1" class="b2 px-4 py-2 text-sm font-medium text-white bg-primary rounded-3 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300">Buy</button>
+        <button onclick="carrito()" class="b2 px-4 py-2 text-sm font-medium text-gray-800 bg-gray-200 rounded-3 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-300">
         <img src="img/carrito.png" alt="carrito" >
       </div>
       <audio src="audio/Thriller Michael Jackson 128 Kbps.mp3"  controls></audio>
@@ -26,8 +26,8 @@
       <a class=" text-sm text-gray-600 text-white" href="#"><i class="fa-solid fa-eye fa-2xl" style="color: #ffffff;"></i></a>
 
       <div class=" botones mt-4 flex justify-between">
-        <button class="b2 px-4 py-2 text-sm font-medium text-white bg-primary rounded-3 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300">Buy</button>
-        <button class="b2 px-4 py-2 text-sm font-medium text-gray-800 bg-gray-200 rounded-3 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-300">
+        <button id="boton2" class="b2 px-4 py-2 text-sm font-medium text-white bg-primary rounded-3 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300">Buy</button>
+        <button onclick="carrito()" class="b2 px-4 py-2 text-sm font-medium text-gray-800 bg-gray-200 rounded-3 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-300">
         <img src="img/carrito.png" alt="carrito" >
 
         </button>
@@ -43,8 +43,8 @@
       <a class=" text-sm text-gray-600 text-white" href="#"><i class="fa-solid fa-eye fa-2xl" style="color: #ffffff;"></i></a>
 
       <div class="botones mt-4 flex justify-between">
-        <button class="b2 px-4 py-2 text-sm font-medium text-white bg-primary rounded-3 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300">Buy</button>
-        <button class="b2 px-4 py-2 text-sm font-medium text-gray-800 bg-gray-200 rounded-3 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-300">
+        <button id="boton3" class="b2 px-4 py-2 text-sm font-medium text-white bg-primary rounded-3 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300">Buy</button>
+        <button onclick="carrito()" class="b2 px-4 py-2 text-sm font-medium text-gray-800 bg-gray-200 rounded-3 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-300">
         <img src="img/carrito.png" alt="carrito" >
 </button>
       </div>
@@ -61,8 +61,8 @@
       <a class=" text-sm text-gray-600 text-white" href="#"><i class="fa-solid fa-eye fa-2xl" style="color: #ffffff;"></i></a>
    
       <div class="botones mt-4 flex justify-between">
-        <button class="b2 px-4 py-2 text-sm font-medium text-white bg-primary rounded-3 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300">Buy</button>
-        <button class="b2 px-4 py-2 text-sm font-medium text-gray-800 bg-gray-200 rounded-3 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-300">
+        <button id="boton4" class="b2 px-4 py-2 text-sm font-medium text-white bg-primary rounded-3 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300">Buy</button>
+        <button onclick="carrito()" class="b2 px-4 py-2 text-sm font-medium text-gray-800 bg-gray-200 rounded-3 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-300">
         <img src="img/carrito.png" alt="carrito" >
     
 </button>
@@ -79,8 +79,8 @@
       <br/>
       <a class=" text-sm text-gray-600 text-white" href="#"><i class="fa-solid fa-eye fa-2xl" style="color: #ffffff;"></i></a>
       <div class="botones mt-4 flex justify-between">
-        <button class="b2 px-4 py-2 text-sm font-medium text-white bg-primary rounded-3 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300">Buy</button>
-        <button class="b2 px-4 py-2 text-sm font-medium text-gray-800  rounded-3 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-300">
+        <button id="boton5" class="b2 px-4 py-2 text-sm font-medium text-white bg-primary rounded-3 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300">Buy</button>
+        <button onclick="carrito()" class="b2 px-4 py-2 text-sm font-medium text-gray-800  rounded-3 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-300">
         <img src="img/carrito.png" alt="carrito" >
 </button>
       </div>
@@ -96,8 +96,8 @@
       <a class=" text-sm text-gray-600 text-white" href="#"><i class="fa-solid fa-eye fa-2xl" style="color: #ffffff;"></i></a>
 
       <div class="botones mt-4 flex justify-between">
-        <button class="b2 px-4 py-2 text-sm font-medium text-white bg-primary rounded-3 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300">Buy</button>
-        <button class="b2 px-4 py-2 text-sm font-medium text-gray-800   rounded-3 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-300">
+        <button id="boton6" class="b2 px-4 py-2 text-sm font-medium text-white bg-primary rounded-3 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300">Buy</button>
+        <button onclick="carrito()" class="b2 px-4 py-2 text-sm font-medium text-gray-800   rounded-3 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-300">
         <img src="img/carrito.png" alt="carrito" >
 </button>
       </div>
@@ -106,7 +106,7 @@
   </div>
 
 </div>
-
+<?php include("comprar.php")?>
 
 
 <?php include("template/pie.php") ?>
