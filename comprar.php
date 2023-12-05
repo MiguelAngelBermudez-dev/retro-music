@@ -35,8 +35,6 @@
 
         switch ($valorDeCompra) {
             case "michael":
-                $nombre = "Ramon Lopez";
-                $datos = "inforamon@gmail.com";
                 $nombreEspecifico = 41;
 
                 $sqlDVD = "SELECT * FROM $tablaDVD WHERE ID_DVD = '$nombreEspecifico' LIMIT 1";
@@ -54,7 +52,7 @@
                     $idTransaccion = $row['ID_DVD'];
                     $PrecioTransaccion = $row["PrecioDVD"];
 
-                    $sqlInsertar = "INSERT INTO $tablaventas (ID_DVD, NombreCliente, DatosCliente, PrecioVenta) VALUES ('$idTransaccion', '$nombre', '$datos', '$PrecioTransaccion')";
+                    $sqlInsertar = "INSERT INTO $tablaventas (ID_DVD, NombreCliente, DatosCliente, PrecioVenta) VALUES ('$idTransaccion', '$comprador', '$datosCompra', '$PrecioTransaccion')";
 
                     $insertResult = $conn->query($sqlInsertar);
 
@@ -73,8 +71,7 @@
                 break;
 
             case "queen":
-                $nombre = "Pepe Guzman";
-                $datos = "inforpepe@gmail.com";
+               
                 $nombreEspecifico = 45;
 
                 $sqlDVD = "SELECT * FROM $tablaDVD WHERE ID_DVD = '$nombreEspecifico' LIMIT 1";
@@ -91,7 +88,7 @@
                     $idTransaccion = $row['ID_DVD'];
                     $PrecioTransaccion = $row["PrecioDVD"];
 
-                    $sqlInsertar = "INSERT INTO $tablaventas (ID_DVD, NombreCliente, DatosCliente, PrecioVenta) VALUES ('$idTransaccion', '$nombre', '$datos', '$PrecioTransaccion')";
+                    $sqlInsertar = "INSERT INTO $tablaventas (ID_DVD, NombreCliente, DatosCliente, PrecioVenta) VALUES ('$idTransaccion', '$comprador', '$datosCompra', '$PrecioTransaccion')";
 
                     $insertResult = $conn->query($sqlInsertar);
 
@@ -106,8 +103,7 @@
                 $valorDeCompra = "";
                 break;
             case "fortunate":
-                $nombre = "Roberto Muñoz";
-                $datos = "inforrober@gmail.com";
+              
                 $nombreEspecifico = 46;
 
                 $sqlDVD = "SELECT * FROM $tablaDVD WHERE ID_DVD = '$nombreEspecifico' LIMIT 1";
@@ -124,7 +120,7 @@
                     $idTransaccion = $row['ID_DVD'];
                     $PrecioTransaccion = $row["PrecioDVD"];
 
-                    $sqlInsertar = "INSERT INTO $tablaventas (ID_DVD, NombreCliente, DatosCliente, PrecioVenta) VALUES ('$idTransaccion', '$nombre', '$datos', '$PrecioTransaccion')";
+                    $sqlInsertar = "INSERT INTO $tablaventas (ID_DVD, NombreCliente, DatosCliente, PrecioVenta) VALUES ('$idTransaccion', '$comprador', '$datosCompra', '$PrecioTransaccion')";
 
                     $insertResult = $conn->query($sqlInsertar);
 
@@ -140,8 +136,7 @@
                 break;
 
             case "dire":
-                $nombre = "Juan Maria Ramirez";
-                $datos = "infoRamirez@gmail.com";
+                
                 $nombreEspecifico = 50;
 
                 $sqlDVD = "SELECT * FROM $tablaDVD WHERE ID_DVD = '$nombreEspecifico' LIMIT 1";
@@ -159,7 +154,7 @@
                     $idTransaccion = $row['ID_DVD'];
                     $PrecioTransaccion = $row["PrecioDVD"];
 
-                    $sqlInsertar = "INSERT INTO $tablaventas (ID_DVD, NombreCliente, DatosCliente, PrecioVenta) VALUES ('$idTransaccion', '$nombre', '$datos', '$PrecioTransaccion')";
+                    $sqlInsertar = "INSERT INTO $tablaventas (ID_DVD, NombreCliente, DatosCliente, PrecioVenta) VALUES ('$idTransaccion', '$comprador', '$datosCompra', '$PrecioTransaccion')";
 
                     $insertResult = $conn->query($sqlInsertar);
 

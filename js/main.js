@@ -289,31 +289,46 @@ document.addEventListener("DOMContentLoaded", () => {
 
   boton1.addEventListener("click", (event) => {
     event.preventDefault();
-    alert("se ha realizado la compra correctamente");
     let valorDcompra = "michael";
-   document.formcompra.compra.value = valorDcompra;
-   document.formcompra.submit();
+    let nombreComprador = prompt("ingrese su nombre completo");
+    let datosComprador = prompt("ingrese su correo electronido y numero de telefono para realizar la transaccion");
+    document.formcompra.nombrecomprador.value = nombreComprador;
+    document.formcompra.datoscomprador.value = datosComprador;
+    document.formcompra.compra.value = valorDcompra;
+    document.formcompra.submit();
+    alert("se ha realizado la compra correctamente");
   });
   boton2.addEventListener("click", (event) => {
     event.preventDefault();
-    alert("se ha realizado la compra correctamente");
     let valorDcompra = "queen";
+    let nombreComprador = prompt("ingrese su nombre completo");
+    let datosComprador = prompt("ingrese su correo electronido y numero de telefono para realizar la transaccion");
+    document.formcompra.nombrecomprador.value = nombreComprador;
+    document.formcompra.datoscomprador.value = datosComprador;
     document.formcompra.compra.value = valorDcompra;
     document.formcompra.submit();
+    alert("se ha realizado la compra correctamente");
   });
   boton3.addEventListener("click", (event) => {
-    event.preventDefault();
-    alert("se ha realizado la compra correctamente");
     let valorDcompra = "fortunate";
+    event.preventDefault();
+    let nombreComprador = prompt("ingrese su nombre completo");
+    let datosComprador = prompt("ingrese su correo electronido y numero de telefono para realizar la transaccion");
+    document.formcompra.nombrecomprador.value = nombreComprador;
+    document.formcompra.datoscomprador.value = datosComprador;
     document.formcompra.compra.value = valorDcompra;
     document.formcompra.submit();
+    alert("se ha realizado la compra correctamente");
   });
   boton4.addEventListener("click", (event) => {
-    
-    alert("se ha realizado la compra correctamente");
     let valorDcompra = "dire";
+    let nombreComprador = prompt("ingrese su nombre completo");
+    let datosComprador = prompt("ingrese su correo electronido y numero de telefono para realizar la transaccion");
+    document.formcompra.nombrecomprador.value = nombreComprador;
+    document.formcompra.datoscomprador.value = datosComprador;
     document.formcompra.compra.value = valorDcompra;
     document.formcompra.submit();
+    alert("se ha realizado la compra correctamente");
   });
   boton5.addEventListener("click", (event) => {
     event.preventDefault();
