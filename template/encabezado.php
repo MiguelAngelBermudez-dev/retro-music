@@ -19,7 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Mooli&family=Nabla&family=Noto+Sans+KR:wght@100;400&family=Noto+Sans+Old+Permic&family=Noto+Sans+Pau+Cin+Hau&family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
  
    
-    <title>Document</title>
+    <title>Retro Music</title>
 </head>
 
 <body>

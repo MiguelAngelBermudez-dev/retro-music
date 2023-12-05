@@ -254,7 +254,6 @@ function ordenLimit(){
     document.formLimit.submit();
 }
 function masVendidos(){
-  alert("funciona");
   let masvendido;
   document.formMasVendido.masvendido.value = masvendido;
   document.formMasVendido.submit();
